@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480.89 180.6">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #730217;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        font-family: InkFree, 'Ink Free';
+        font-size: 74.81px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M91.27,76.41l8.7-14.87-3.02-17.22,7.92-11.36-18.34-4.35-4.56,6.35c-17.4,7.25-20.66,9.06-20.66,9.06l-18.04,32.38h48Z"/>
+  <path class="cls-2" d="M91.27,76.41l8.7-14.87-3.02-17.22L119.9,11.4l-14.5-9.06-23.44,32.62c-17.4,7.25-20.66,9.06-20.66,9.06l-18.04,32.38h48Z"/>
+  <polygon class="cls-2" points="109.91 76.41 92.38 179.1 19.3 179.1 1.78 76.41 109.91 76.41"/>
+  <polygon class="cls-2" points="29.85 76.41 17.16 121.11 58.54 121.11 45.97 76.41 29.85 76.41"/>
+  <line class="cls-3" x1="103.56" y1="1.28" x2="118.26" y2="10.31"/>
+  <line class="cls-3" x1="99.14" y1="11.07" x2="113.84" y2="20.1"/>
+  <text class="cls-4" transform="translate(123.98 116.54)"><tspan x="0" y="0">Vanier Wine</tspan></text>
+</svg>

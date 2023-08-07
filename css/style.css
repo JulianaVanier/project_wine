@@ -1,0 +1,374 @@
+/***************Resume***********************
+
+1- Classes sorted by type;
+2- Styles sorted alphabetically;
+3- Capitalized the first letter from DB;
+4- Using google fonts;
+5- Using grid;
+6- Id with display none, client dosen't need to know id
+7- Function to display menu mobile
+
+**********************************************/
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Oswald:wght@300&family=Raleway:wght@800&family=Rubik&display=swap");
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 0fr;
+    grid-template-rows: 1fr 0fr 0.5fr;
+    margin: 1rem 15rem auto 15rem;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.logIn {
+    align-items: center;
+    color: #707070;
+    display: flex;
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 12px;
+    justify-content: right;
+    text-transform: capitalize;
+}
+
+.logIn:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.cart {
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    padding-left: 3rem;
+    width: fit-content;
+}
+
+.cart img {
+    width: 35px;
+}
+
+.menu_hamburguer {
+    display: none;
+}
+
+#linksMenu {
+    background-color: #faf8f8;
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #707070;
+    display: none;
+    padding-left: 3rem;
+}
+
+#linksMenu p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.line {
+    display: block;
+    grid-column-end: 5;
+    grid-column-start: 1;
+    width: auto;
+}
+
+.menu {
+    color: #707070;
+    display: grid;
+    font-family: freight-sans-pro, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-template-columns: 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 30rem;
+    grid-template-rows: 0.5fr;
+    text-transform: capitalize;
+}
+
+.menu p:hover {
+    color: rgb(83, 3, 21);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.banner1 {
+    height: 45rem;
+    overflow: hidden;
+}
+
+.banner1 img {
+    width: 100%;
+}
+
+.title_main {
+    display: block;
+    margin: 3rem 10rem 3rem 10rem;
+}
+
+.title_main h1 {
+    color: rgb(83, 3, 21);
+    font-family: "Raleway", sans-serif;
+    font-size: 25px;
+    margin-bottom: 1rem;
+    margin: 0;
+}
+
+.title_main hr {
+    border-top: 1px solid #eeecec;
+    width: auto;
+}
+
+/***************CLASS FOR FOOTER*********************/
+.container_bottom {
+    background-color: #faf9f9;
+    border-top: 0.5px solid rgb(245, 243, 243);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: auto;
+}
+
+.box_footer {
+    color: black;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    margin: 2rem auto 3rem auto;
+    width: 20rem;
+}
+
+.container_services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.container_services p {
+    align-items: center;
+    color: black;
+    display: flex;
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.container_icon {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10rem;
+    width: fit-content;
+}
+
+.container_icon img {
+    height: 7rem;
+    width: 7rem;
+}
+
+ul {
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+li {
+    padding: 1rem;
+}
+
+/*************CLASS FOR JS**********************/
+
+.container_rating,
+.location {
+    color: black;
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.id {
+    display: none;
+}
+
+.winery,
+.wine {
+    align-items: center;
+    color: rgb(65, 65, 65);
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    height: 2.3rem;
+    text-transform: capitalize;
+}
+
+.winery::first-letter,
+.wine::first-letter,
+.location::first-letter {
+    text-transform: capitalize;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: auto 5rem 5rem 5rem;
+}
+
+.container_product {
+    border-radius: 0.5rem;
+    border: 10px solid #ececec;
+    display: block;
+    height: 32rem;
+    margin: 1rem auto auto auto;
+    overflow: hidden;
+    padding: 2rem 1rem 3rem 1rem;
+    width: 24rem;
+}
+
+.container_product img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 25rem;
+}
+
+.container_img {
+    margin-top: 1rem;
+    max-height: 20rem;
+    max-width: 10rem;
+    min-height: 20rem;
+}
+
+button {
+    background-color: #c11732;
+    border-radius: 0.3rem;
+    border: 1px solid #c11732;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    width: 20rem;
+}
+
+@media screen and (max-width: 1460px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 0.1fr 1fr 0.1fr 0.3fr;
+        grid-template-rows: 0.2fr 0fr 0fr;
+        margin: auto 0.5rem 0 0.5rem;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .cart img {
+        display: none;
+    }
+
+    .menu_hamburguer {
+        align-items: center;
+        display: flex;
+    }
+
+    .menu_hamburguer img {
+        height: 25px;
+        width: 35px;
+    }
+
+    .menu {
+        display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    }
+
+    .line {
+        display: block;
+        grid-column-end: 6;
+        grid-column-start: 1;
+        margin-bottom: 0;
+        width: auto;
+    }
+
+    .banner1 {
+        height: auto;
+        margin-top: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container_product {
+        height: 35rem;
+        padding: 3rem;
+        width: 11rem;
+    }
+
+    button {
+        width: 10rem;
+    }
+
+    .container_services {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container_bottom {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin: auto;
+    }
+
+    .winery,
+    .wine {
+        font-size: 15px;
+        height: auto;
+    }
+
+    .title_main hr {
+        display: none;
+    }
+
+    .title_main h1 {
+        font-size: 20px;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        width: 20rem;
+    }
+
+    .title_main {
+        margin: 0;
+    }
+}
